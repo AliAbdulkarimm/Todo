@@ -4,12 +4,12 @@ export const TodoContext = createContext();
 
 const TodoProvider = ({ children }) => {
   const [todos, setTodos] = useState(() => {
-    // ✅ Load from localStorage on initial render
+    
     const savedTodos = JSON.parse(localStorage.getItem("todos"));
     return savedTodos || [];
   });
 
-  // ✅ Save to localStorage whenever `todos` changes
+  
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);

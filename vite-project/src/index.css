@@ -1,41 +1,41 @@
-/* Import Google Font */
+
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap');
 
-/* Global Reset */
+
 * { 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Background */
+
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  height: 100vh; /* Full screen height */
-  overflow: hidden; /* Prevent scrolling */
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  overflow: hidden; 
 }
 
-/* Main Wrapper */
+
 .app-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Centers content */
+  justify-content: center; 
   width: 100%;
   max-width: 1000px;
-  height: 100vh; /* Ensures full height */
+  height: 100vh; 
   position: relative;
 }
 
-/* Navbar - Floating Glass Effect */
+
 .navbar {
   position: absolute;
-  top: 20px; /* Fixed positioning at the top */
+  top: 20px; 
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
@@ -61,7 +61,7 @@ body {
   color: #ffeb3b;
 }
 
-/* Todo App Container */
+
 .container {
   width: 90%;
   max-width: 600px;
@@ -73,7 +73,7 @@ body {
   text-align: center;
 }
 
-/* Title */
+
 h1 {
   font-family: 'Pacifico', cursive;
   font-size: 2.5rem;
@@ -81,7 +81,7 @@ h1 {
   color: #ffeb3b;
 }
 
-/* Todo Form */
+
 form {
   display: flex;
   flex-direction: column;
@@ -118,7 +118,7 @@ button:hover {
   background: #ffca28;
 }
 
-/* Todo List */
+
 ul {
   list-style: none;
   width: 100%;
@@ -149,7 +149,7 @@ li.completed {
   opacity: 0.7;
 }
 
-/* Footer */
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -160,7 +160,7 @@ li.completed {
   backdrop-filter: blur(5px);
 }
 
-/* Responsive Design */
+
 @media (min-width: 768px) {
   .navbar {
     max-width: 800px;
